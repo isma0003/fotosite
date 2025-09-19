@@ -1,0 +1,49 @@
+/*************** Reset *********************/
+* {
+  margin: 2px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+p {
+  text-align: center;
+  padding: 100px;
+}
+
+@media (width>800px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .grid_1_1_1_1_1 {
+    display: grid;
+    grid-template-columns: 6;
+  }
+  .grid_1_1_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1/6;
+    grid-row: 6/6;
+  }
+}
+
+.thumbnail {
+  width: 100px;
+  margin: 5px;
+  border: 2px solid transparent;
+  transition: transform 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  border-color: #000;
+}
